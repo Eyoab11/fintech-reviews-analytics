@@ -2,7 +2,7 @@
 Data analytics project to scrape, analyze, and visualize Google Play Store reviews for Ethiopian banks (CBE, BOA, Dashen).
 
 ## Setup
-1. Clone the repository: `git clone https://github.com/<your-username>/fintech-reviews-analytics.git`
+1. Clone the repository: `git clone https://github.com/Eyoab11/fintech-reviews-analytics.git`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Set up Oracle XE or PostgreSQL (fallback) for database tasks.
 
