@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.ipynb_checkpoints/
+
+# Data
+data/raw/*
+data/processed/*
+data/external/*
+!data/*.md  # Allow markdown files in data directory for documentation
+
+# Environment
+.env
+*.env
+venv/
+.venv/
+
+# Database credentials
+*.sql
+*.db
+credentials.json
+
+# System files
+.DS_Store
+Thumbs.db
