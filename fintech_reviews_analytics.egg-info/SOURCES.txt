@@ -1,0 +1,9 @@
+README.md
+setup.py
+fintech_reviews_analytics.egg-info/PKG-INFO
+fintech_reviews_analytics.egg-info/SOURCES.txt
+fintech_reviews_analytics.egg-info/dependency_links.txt
+fintech_reviews_analytics.egg-info/top_level.txt
+tests/test_analysis.py
+tests/test_preprocess_reviews.py
+tests/test_scrape_reviews.py
