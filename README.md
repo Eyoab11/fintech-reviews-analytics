@@ -7,10 +7,10 @@ Data analytics project to scrape, analyze, and visualize Google Play Store revie
 3. Set up Oracle XE or PostgreSQL (fallback) for database tasks.
 
 ## Methodology
-- **Task 1**: Scrape 400+ reviews per bank using `google-play-scraper`.
-- **Task 2**: Perform sentiment analysis with DistilBERT and thematic analysis with spaCy/TF-IDF.
-- **Task 3**: Store cleaned data in Oracle database.
-- **Task 4**: Generate insights, visualizations, and recommendations.
+
+### Task 1: Data Collection and Preprocessing
+- **Scraping**: Used `google-play-scraper` to collect 1,200 reviews (400 per bank) from Google Play Store for CBE (`com.combanketh.mobilebanking`), BOA (`com.boa.boaMobileBanking`), and Dashen (`com.dashen.dashensuperapp`). Fields include review text, rating (1–5), date, bank name, and source ("Google Play"). Saved to `data/raw/reviews_raw.csv`.
+- **Preprocessing**: Removed duplicates based on `review`, `rating`, `date`, and `bank`. Handled missing review text (if any) with "No review text". Normalized dates to `YYYY-MM-DD`. Saved cleaned data to `data/processed/reviews_cleaned.csv`.
 
 ## Folder Structure
 - `data/`: Raw and processed datasets.
