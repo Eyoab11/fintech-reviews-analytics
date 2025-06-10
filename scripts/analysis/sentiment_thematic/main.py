@@ -41,16 +41,16 @@ def main():
     results_df = analyzer.process_reviews(reviews_df)
     
     # Create output directories
-    output_dir = Path("reports/sentiment_thematic")
-    output_dir.mkdir(parents=True, exist_ok=True)
+    output_base = Path("../../../data/analysis/sentiment_thematic")
+    output_base.mkdir(parents=True, exist_ok=True)
     
     # Save detailed results
-    results_path = output_dir / "analysis_results.csv"
+    results_path = output_base / "sentiment_thematic_results.csv"
     analyzer.save_results(results_df, results_path)
     
     # Generate and save summary
     summary = analyzer.generate_summary(results_df)
-    summary_path = output_dir / "analysis_summary.json"
+    summary_path = output_base / "sentiment_thematic_summary.json"
     with open(summary_path, 'w') as f:
         json.dump(summary, f, indent=4)
     
